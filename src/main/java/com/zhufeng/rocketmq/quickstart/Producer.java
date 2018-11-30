@@ -16,8 +16,8 @@ public class Producer {
 		producer.setNamesrvAddr(Constant.NAMESRVADDR);
 		producer.start();
 		
-		Message message = new Message("test_quick_topic", "test_quick_tag"
-				, "test_quick_key1", ("Hello QuickStart_RocketMQ_Producer").getBytes());
+		Message message = new Message("test_quick_topic_master", "test_quick_tag"
+				, "test_quick_key1m", ("Hello QuickStart_RocketMQ_Producer1m1s").getBytes());
 		
 		SendResult sr = producer.send(message);
 		System.out.println(sr);
