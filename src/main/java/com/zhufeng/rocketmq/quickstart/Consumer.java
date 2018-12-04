@@ -15,7 +15,7 @@ public class Consumer {
 	public static void main(String[] args) throws MQClientException {
 		DefaultMQPushConsumer consumer = new DefaultMQPushConsumer("test_quick_consumerGroup");
 
-		consumer.setNamesrvAddr(Constant.NAMESRVADDR_MASTER_SLAVE);
+		consumer.setNamesrvAddr(Constant.NAMESRVADDR);
 		consumer.setConsumeFromWhere(ConsumeFromWhere.CONSUME_FROM_LAST_OFFSET);
 
 		// 消费者订阅
